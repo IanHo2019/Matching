@@ -34,7 +34,7 @@ One suggestion: If a propensity score matching model can be done using both `tef
 
 For greater details, please read Stata documentation (which you can find by running `help teffects` in Stata).
 
-Also, please take a look at my do file (here) for examples. I used the two commands (`psmatch2` and `teffects psmatch`) with a pseudo dataset from Social Science Computing Cooperative at University of Wisconsin-Madison. Note that in the dataset,
+Also, please take a look at my do file ([here](./PSM_teffects.do)) for examples. I used the two commands (`psmatch2` and `teffects psmatch`) with a pseudo dataset from Social Science Computing Cooperative at University of Wisconsin-Madison. Note that in the dataset,
   * probability of getting treated, $Pr(t=1)$, is positively correlated with `x1` and `x2`.
   * Both `x1` and `x2` are positively correlated with `y`.
 
