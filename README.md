@@ -20,9 +20,9 @@ More differences are summarized in the following table.
 | Weighting variable | automatically generate | no |
 | Control unit(s) indicator | no | `gen(match)` option |
 
-One suggestion: If a propensity score matching model can be done using both "teffects psmatch" and "psmatch2", then
-  * To get the correct standard error, use `teffects psmatch`;
-  * To get a variable for weighting, use `psmatch2`.
+One suggestion: If a propensity score matching model can be done using both `teffects psmatch` and `psmatch2`, then
+  * to get the correct standard error, use `teffects psmatch`;
+  * to get a variable for weighting, use `psmatch2`.
 
 `teffects` actually is a powerful command not only designed to do propensity score matching. It has totally six subcommands:
   * `teffects psmatch` for propensity score matching, which is my focus here;
