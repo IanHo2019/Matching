@@ -139,7 +139,7 @@ restore
 psestimate treat re74 re75 unempl74 unempl75, notry(re78) genps(pscore)
 return list, all
 
-* Results below is the same
+* Propensity score calculated below should be the same as above.
 eststo est_ps: logit `r(tvar)' `r(h)'
 predict pscore_hat, pr
 
