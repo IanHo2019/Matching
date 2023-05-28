@@ -12,7 +12,6 @@ global dtadir "$localdir\Data"
 global tabdir "$localdir\Tables"
 
 
-
 ***********************************************************************
 **# Summary statistics
 use "$dtadir\nswre74.dta", clear
@@ -133,7 +132,6 @@ foreach var in m1 sd1 m2 sd2 t nd {
 restore
 
 
-
 ***********************************************************************
 **# Estimate propensity scores
 psestimate treat re74 re75 unempl74 unempl75, notry(re78) genps(pscore)
@@ -148,7 +146,7 @@ estout est_ps, ///
 	coll(none) cells(b(nostar fmt(2)) se(par fmt(2)))
 
 
-	***********************************************************************
+***********************************************************************
 **# Estimate ATE
 sum pscore, detail
 
