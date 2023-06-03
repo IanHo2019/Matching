@@ -12,9 +12,9 @@ teffects psmatch (y) (t x, logit)
 
 Although both of them can estimate treatment effect by propensity score matching, they are very different in some respects:
   1. **psmatch2** (written by [Edwin Leuven](https://leuven.economists.nl/) and [Barbara Sianesi](https://www.iza.org/people/fellows/7649/barbara-sianesi)): To use it, please install the `psmatch2` package. It by default estimates the *average treatment effect on the treated* (ATT or ATET) and uses a *probit* model to estimate propensity score. It is outdated because its estimation of standard error doesn't take into account that the propensity score is estimated instead of given/known.
-  1. **teffects psmatch**: It by default estimates the *average treatment effect* (ATE) and uses a *logit* model to estimate propensity score. It was introduced in Stata 13 (no need for manual installation) for estimating treatment effects in various ways (including propensity score). Importantly, it takes into account the fact that propensity scores are estimated when estimating standard errors, due to [Abadie & Imbens (2012)](https://www.jstor.org/stable/43866448).
-  
-More differences are summarized in the following table.
+  1. **teffects psmatch**: It by default estimates the *average treatment effect* (ATE) and uses a *logit* model to estimate propensity score. It was introduced in Stata 13 (no need for manual installation) for estimating treatment effects in various ways (including propensity score). Importantly, it takes into account the fact that propensity scores are estimated when estimating standard errors, due to [Abadie & Imbens (2016)](https://www.jstor.org/stable/43866448).
+
+Their major differences are summarized in the following table.
 
 | | psmatch2 | teffects psmatch |
 | :--- | :--- | :--- |
